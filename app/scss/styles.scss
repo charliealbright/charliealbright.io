@@ -1,0 +1,45 @@
+$color-purple-dark: #532F8C;
+$color-purple: #845AC7;
+$color-purple-light: #D9CCEE;
+$color-white: white;
+
+
+.jumbotron {
+    background: $color-purple-dark;
+    color: $color-white;
+    padding-bottom: 80px;
+
+    p {
+        color: $color-purple-light;
+        max-width: 75%;
+        margin: 1em auto 2em;
+    }
+
+    .btn-primary {
+        background: $color-purple;
+        border-color: $color-purple;
+    }
+
+    .btn-primary:hover {
+        background: #7646C1;
+    }
+
+    .lang-logo {
+        display: block;
+        background: #E2231A;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        border: 2px solid $color-white;
+    }
+}
+
+.navbar + .jumbotron {
+    margin-top: -20px;
+}
+
+.jumbotron .lang-logo img {
+    max-width: 100%;
+}
