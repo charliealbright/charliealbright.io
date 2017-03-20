@@ -13,7 +13,7 @@
     background: #7646C1; }
   .jumbotron .lang-logo {
     display: block;
-    background: #E2231A;
+    background: #00CC55;
     border-radius: 50%;
     overflow: hidden;
     width: 100px;
@@ -22,7 +22,20 @@
     border: 2px solid white; }
 
 .navbar + .jumbotron {
-  margin-top: -20px; }
+  margin-top: 50px; }
 
 .jumbotron .lang-logo img {
   max-width: 100%; }
+
+.navbar {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  background: #2c3e50;
+  border: 0; }
+
+.navbar-brand {
+  padding: 0px;
+  margin-left: 10px; }
+  .navbar-brand img {
+    height: 100%; }

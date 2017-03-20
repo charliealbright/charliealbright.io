@@ -37,4 +37,5 @@ gulp.task('nodemon', function () {
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/views/**/*.ejs', browserSync.reload);
 });
