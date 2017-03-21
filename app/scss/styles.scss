@@ -3,6 +3,7 @@ $color-wet-asphalt: #34495E;
 $color-turquoise: #1ABC9C;
 $color-green-sea: #16A085;
 $color-clouds: #ECF0F1;
+$color-white: #FFFFFF;
 
 @mixin box-shadow($height, $blurRadius) {
     -webkit-box-shadow: 0px $height $blurRadius 0px rgba(0,0,0,0.5);
@@ -10,8 +11,13 @@ $color-clouds: #ECF0F1;
     box-shadow: 0px $height $blurRadius 0px rgba(0,0,0,0.5);
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .jumbotron {
-    background: $color-green-sea;
+    background: url(3px-tile.png);
+    background-color: $color-green-sea;
     color: $color-clouds;
     padding-bottom: 80px;
 
@@ -32,11 +38,11 @@ $color-clouds: #ECF0F1;
 
     .lang-logo {
         display: block;
-        background: $color-wet-asphalt;
+        background: $color-turquoise;
         border-radius: 50%;
         overflow: hidden;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         margin: auto;
         border: 2px solid $color-clouds;
     }
@@ -58,6 +64,7 @@ $color-clouds: #ECF0F1;
 
 .navbar-brand {
 
+    background: $color-turquoise;
     padding: 0px;
 
     img {
@@ -65,20 +72,49 @@ $color-clouds: #ECF0F1;
     }
 }
 
-.navbar-nav {
-    li {
-        a.social-link {
-            color: $color-clouds;
-            padding-top: 11px;
-            padding-bottom: 10px;
+.navbar-default {
+    .navbar-nav {
+        > li {
+            > a {
+                color: $color-clouds;
 
-            &:hover {
-                color: #FFFFFF;
-                background: $color-turquoise;
+                &:hover {
+                    color: $color-white;
+                    background: $color-turquoise;
+                }
+
+                &:focus {
+                    color: $color-clouds;
+                }
             }
 
-            &:focus {
-                color: #ECF0F1;
+            a.social-link {
+                padding-top: 11px;
+                padding-bottom: 10px;
+            }
+        }
+
+        > .active {
+            > a {
+                color: $color-clouds;
+                background-color: $color-turquoise;
+
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-turquoise;
+                }
+            }
+        }
+
+        > .open {
+            > a {
+                color: $color-clouds;
+                background-color: $color-turquoise;
+
+                &:focus {
+                    color: $color-clouds;
+                    background-color: $color-turquoise;
+                }
             }
         }
     }
