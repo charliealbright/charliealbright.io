@@ -5,6 +5,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/images'));
+app.use(express.static(__dirname + '/fonts'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');

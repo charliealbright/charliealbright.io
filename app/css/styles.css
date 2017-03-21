@@ -35,7 +35,15 @@
   border: 0; }
 
 .navbar-brand {
-  padding: 0px;
-  margin-left: 10px; }
+  padding: 2px;
+  margin-left: 14px; }
   .navbar-brand img {
     height: 100%; }
+
+.navbar-nav li a.social-link {
+  color: #ECF0F1;
+  padding-top: 11px;
+  padding-bottom: 10px; }
+  .navbar-nav li a.social-link:hover {
+    color: #ECF0F1;
+    background: #34495E; }
