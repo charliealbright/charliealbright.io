@@ -1,7 +1,8 @@
-$color-purple-dark: #532F8C;
-$color-purple: #845AC7;
-$color-purple-light: #D9CCEE;
-$color-white: white;
+$color-midnight-blue: #2C3E50;
+$color-wet-asphalt: #34495E;
+$color-turquoise: #1ABC9C;
+$color-green-sea: #16A085;
+$color-clouds: #ECF0F1;
 
 @mixin box-shadow($height, $blurRadius) {
     -webkit-box-shadow: 0px $height $blurRadius 0px rgba(0,0,0,0.5);
@@ -10,34 +11,34 @@ $color-white: white;
 }
 
 .jumbotron {
-    background: $color-purple-dark;
-    color: $color-white;
+    background: $color-green-sea;
+    color: $color-clouds;
     padding-bottom: 80px;
 
     p {
-        color: $color-purple-light;
+        color: $color-clouds;
         max-width: 75%;
         margin: 1em auto 2em;
     }
 
     .btn-primary {
-        background: $color-purple;
-        border-color: $color-purple;
+        background: $color-midnight-blue;
+        border-color: $color-midnight-blue;
     }
 
     .btn-primary:hover {
-        background: #7646C1;
+        background: $color-wet-asphalt;
     }
 
     .lang-logo {
         display: block;
-        background: #00CC55;
+        background: $color-wet-asphalt;
         border-radius: 50%;
         overflow: hidden;
         width: 100px;
         height: 100px;
         margin: auto;
-        border: 2px solid $color-white;
+        border: 2px solid $color-clouds;
     }
 }
 
@@ -51,14 +52,13 @@ $color-white: white;
 
 .navbar {
     @include box-shadow(8px, 20px);
-    background: #2c3e50;
+    background: $color-midnight-blue;
     border: 0;
 }
 
 .navbar-brand {
 
-    padding: 2px;
-    margin-left: 14px;
+    padding: 0px;
 
     img {
         height: 100%;
@@ -68,13 +68,17 @@ $color-white: white;
 .navbar-nav {
     li {
         a.social-link {
-            color: #ECF0F1;
+            color: $color-clouds;
             padding-top: 11px;
             padding-bottom: 10px;
 
             &:hover {
+                color: #FFFFFF;
+                background: $color-turquoise;
+            }
+
+            &:focus {
                 color: #ECF0F1;
-                background: #34495E;
             }
         }
     }
