@@ -22,7 +22,7 @@ body {
     background-color: $color-asbestos;
     color: $color-clouds;
     padding-top: 80px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 
     h1 {
         color: $color-white;
@@ -31,7 +31,7 @@ body {
     p {
         color: $color-clouds;
         max-width: 75%;
-        margin: 1em auto 1em;
+        margin: 0em auto;
 
         i {
             color: $color-turquoise;

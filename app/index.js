@@ -1,4 +1,6 @@
 var express = require('express');
+var favicon = require('serve-favicon');
+var path = require('path');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -6,6 +8,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/images'));
 app.use(express.static(__dirname + '/fonts'));
+app.use(favicon(path.join(__dirname, 'images', 'favicon.ico')));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');

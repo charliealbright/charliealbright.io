@@ -6,13 +6,13 @@ body {
   background-color: #7F8C8D;
   color: #ECF0F1;
   padding-top: 80px;
-  padding-bottom: 0px; }
+  padding-bottom: 20px; }
   .jumbotron h1 {
     color: #FFFFFF; }
   .jumbotron p {
     color: #ECF0F1;
     max-width: 75%;
-    margin: 1em auto 1em; }
+    margin: 0em auto; }
     .jumbotron p i {
       color: #1ABC9C; }
   .jumbotron .btn-primary {
