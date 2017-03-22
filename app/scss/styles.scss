@@ -4,6 +4,8 @@ $color-turquoise: #1ABC9C;
 $color-green-sea: #16A085;
 $color-clouds: #ECF0F1;
 $color-white: #FFFFFF;
+$color-concrete: #95A5A6;
+$color-asbestos: #7F8C8D;
 
 @mixin box-shadow($height, $blurRadius) {
     -webkit-box-shadow: 0px $height $blurRadius 0px rgba(0,0,0,0.5);
@@ -17,14 +19,23 @@ body {
 
 .jumbotron {
     background: url(3px-tile.png);
-    background-color: $color-green-sea;
+    background-color: $color-asbestos;
     color: $color-clouds;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+
+    h1 {
+        color: $color-white;
+    }
 
     p {
         color: $color-clouds;
         max-width: 75%;
-        margin: 1em auto 2em;
+        margin: 1em auto 1em;
+
+        i {
+            color: $color-turquoise;
+        }
     }
 
     .btn-primary {
@@ -60,16 +71,6 @@ body {
     @include box-shadow(8px, 20px);
     background: $color-midnight-blue;
     border: 0;
-}
-
-.navbar-brand {
-
-    background: $color-turquoise;
-    padding: 0px;
-
-    img {
-        height: 100%;
-    }
 }
 
 .navbar-default {
@@ -116,6 +117,20 @@ body {
                     background-color: $color-turquoise;
                 }
             }
+        }
+    }
+
+    .navbar-brand {
+
+        background-color: $color-turquoise;
+        padding: 0px;
+
+        img {
+            height: 100%;
+        }
+
+        &:hover {
+            background-color: $color-turquoise;
         }
     }
 }
