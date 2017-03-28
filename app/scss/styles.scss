@@ -2,8 +2,9 @@ $color-midnight-blue: #2C3E50;
 $color-wet-asphalt: #34495E;
 $color-turquoise: #1ABC9C;
 $color-green-sea: #16A085;
-$color-clouds: #ECF0F1;
 $color-white: #FFFFFF;
+$color-clouds: #ECF0F1;
+$color-silver: #BDC3C7;
 $color-concrete: #95A5A6;
 $color-asbestos: #7F8C8D;
 
@@ -19,17 +20,18 @@ body {
 
 .jumbotron {
     background: url(3px-tile.png);
-    background-color: $color-asbestos;
+    background-color: $color-concrete;
     color: $color-clouds;
     padding-top: 80px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 
     h1 {
         color: $color-white;
     }
 
     p {
-        color: $color-clouds;
+        color: $color-white;
         max-width: 75%;
         margin: 0em auto;
 
@@ -52,19 +54,27 @@ body {
         background: $color-turquoise;
         border-radius: 50%;
         overflow: hidden;
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        border: 2px solid $color-clouds;
+        width: 250px;
+        height: 250px;
+        margin: 0px auto 50px;
+        border: 3px solid $color-clouds;
+
+        img {
+            max-width: 100%;
+            transition: max-width 0.3s, margin-left 0.3s, margin-top 0.3s;
+
+            &:hover {
+                max-width: 120%;
+                margin-left: -10%;
+                margin-top: -10%;
+                transition: max-width 0.3s, margin-left 0.3s, margin-top 0.3s;
+            }
+        }
     }
 }
 
 .navbar + .jumbotron {
     margin-top: 50px;
-}
-
-.jumbotron .lang-logo img {
-    max-width: 100%;
 }
 
 .navbar {
@@ -78,10 +88,12 @@ body {
         > li {
             > a {
                 color: $color-clouds;
+                transition: background 0.3s;
 
                 &:hover {
-                    color: $color-white;
+                    color: $color-clouds;
                     background: $color-turquoise;
+                    transition: background 0.3s;
                 }
 
                 &:focus {
