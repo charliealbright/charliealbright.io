@@ -8,6 +8,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/images'));
 app.use(express.static(__dirname + '/fonts'));
+app.use('/resume', express.static(__dirname + '/pdf/Charlie_Albright_Resume.pdf'));
 app.use(favicon(path.join(__dirname, 'images', 'favicon.ico')));
 
 // views is directory for all template files
